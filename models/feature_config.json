@@ -1,0 +1,29 @@
+{
+  "features": [
+    "Marrital_Status",
+    "Family_Migrant_Tenure(Years)",
+    "Gurdian_Age",
+    "Family_Size",
+    "Asset_Yes",
+    "Productive_Asset_Num",
+    "Productive_Asset_Value",
+    "Total_Income_Annualy",
+    "Income_Monthly_per_head",
+    "Chronic_Patient_Num",
+    "Disabled_Num",
+    "Loans_Num",
+    "Loans_Outstanding",
+    "has_Savings",
+    "Savings_Amt",
+    "has_18_50_Family_member",
+    "has_50_plus",
+    "has_under5",
+    "Has_Chronic_Dissease",
+    "Loans_Taken_Yes",
+    "Loans_Running_Yes",
+    "Migrant",
+    "Disabled_Yes",
+    "Participant_Age"
+  ],
+  "feature_count": 24
+}

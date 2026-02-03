@@ -1,0 +1,65 @@
+{
+  "project": "BRAC Household Aid Eligibility Prediction",
+  "author": "Nasim Mahmud",
+  "date": "2026-02-03",
+  "task1": {
+    "name": "Eligibility Prediction (Binary)",
+    "model": "Random Forest (Tuned)",
+    "approach": "BorderlineSMOTE (ratio=0.5)",
+    "cv_roc_auc": 0.8371,
+    "test_roc_auc": 0.7767,
+    "test_recall_selected": 0.961,
+    "test_recall_not_selected": 0.546,
+    "threshold": 0.5
+  },
+  "task2": {
+    "name": "Aid Type Recommendation (Multi-class)",
+    "model": "Random Forest",
+    "approach": "Class Weights (balanced)",
+    "accuracy": 0.91,
+    "macro_f1": 0.34,
+    "classes": [
+      "Both",
+      "Enterprise Development",
+      "Skill Development"
+    ],
+    "limitation": "Severe class imbalance - reliable only for Enterprise Development"
+  },
+  "fairness": {
+    "status": "PASSED",
+    "attributes_tested": [
+      "Marrital_Status",
+      "Disabled_Yes",
+      "Has_Chronic_Dissease",
+      "Migrant"
+    ],
+    "disparate_impact_min": 0.861,
+    "tpr_diff_max": 0.04
+  },
+  "features": [
+    "Marrital_Status",
+    "Family_Migrant_Tenure(Years)",
+    "Gurdian_Age",
+    "Family_Size",
+    "Asset_Yes",
+    "Productive_Asset_Num",
+    "Productive_Asset_Value",
+    "Total_Income_Annualy",
+    "Income_Monthly_per_head",
+    "Chronic_Patient_Num",
+    "Disabled_Num",
+    "Loans_Num",
+    "Loans_Outstanding",
+    "has_Savings",
+    "Savings_Amt",
+    "has_18_50_Family_member",
+    "has_50_plus",
+    "has_under5",
+    "Has_Chronic_Dissease",
+    "Loans_Taken_Yes",
+    "Loans_Running_Yes",
+    "Migrant",
+    "Disabled_Yes",
+    "Participant_Age"
+  ]
+}
